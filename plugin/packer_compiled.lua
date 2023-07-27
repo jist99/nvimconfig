@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/jacobtillotson/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
+  ["close-buffers.nvim"] = {
+    loaded = true,
+    path = "/Users/jacobtillotson/.local/share/nvim/site/pack/packer/start/close-buffers.nvim",
+    url = "https://github.com/kazhala/close-buffers.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/jacobtillotson/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",

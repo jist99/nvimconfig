@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
 
   use 'm4xshen/autoclose.nvim'
 
+  use 'kazhala/close-buffers.nvim'
+
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
