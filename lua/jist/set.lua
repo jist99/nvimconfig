@@ -24,3 +24,5 @@ vim.opt.colorcolumn = "100"
 
 --the status line shows us the mode
 vim.opt.showmode = false
+
+vim.opt.splitright = true
