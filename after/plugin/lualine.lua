@@ -33,5 +33,5 @@ require('lualine').setup{
             'filename',
             path = 1,
         }}
-    }
+    },
 }
