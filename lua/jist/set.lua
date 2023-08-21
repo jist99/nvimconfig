@@ -26,3 +26,6 @@ vim.opt.colorcolumn = "100"
 vim.opt.showmode = false
 
 vim.opt.splitright = true
+
+--make python indentation tolerable
+vim.g.pyindent_open_paren = vim.opt.shiftwidth
