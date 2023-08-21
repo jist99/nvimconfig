@@ -13,6 +13,8 @@ vim.cmd([[
     :command Wq wq
     :command W w
     :command Q q
+    :command Qa qa
+    :command QA qa
 ]])
 
 --tabs
