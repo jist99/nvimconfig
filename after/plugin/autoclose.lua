@@ -1,5 +1,6 @@
 require("autoclose").setup({
     options = {
-        disable_when_touch = true
+        disable_when_touch = true,
+        touch_regex = "[%w(%[{]",
     }
 })
