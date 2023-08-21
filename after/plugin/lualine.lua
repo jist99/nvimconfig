@@ -23,15 +23,13 @@ require('lualine').setup{
             'tabs',
             mode = 2,
         }},
+        lualine_y = {{
+            'filename',
+            path = 1,
+        }},
         lualine_z = {{
             'datetime',
             style = '%d/%m/%y %H:%M',
-        }}
-    },
-    winbar = {
-        lualine_c = {{
-            'filename',
-            path = 1,
         }}
     },
 }
