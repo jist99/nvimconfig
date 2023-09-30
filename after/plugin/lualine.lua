@@ -8,15 +8,15 @@ require('lualine').setup{
     sections = {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {{
-            'buffers',
-            mode = 2,
+        --lualine_c = {{
+        --    'buffers',
+        --    mode = 2,
 
-            buffers_color = {
-                active = 'lualine_c_visual',
-                inactive = 'lualine_c_inactive',
-            }
-        }},
+        --    buffers_color = {
+        --        active = 'lualine_c_visual',
+        --        inactive = 'lualine_c_inactive',
+        --    }
+        --}},
     },
     tabline = {
         lualine_a = {{
