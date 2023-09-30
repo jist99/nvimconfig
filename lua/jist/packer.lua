@@ -40,6 +40,9 @@ return require('packer').startup(function(use)
         },
     }
 
+    -- terminals
+    use {"akinsho/toggleterm.nvim", tag = 'v2.*'}
+
     -- nvim v0.7.2
     use({
         "kdheepak/lazygit.nvim",

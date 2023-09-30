@@ -1,3 +1,13 @@
+require('telescope').setup{
+    defaults = {
+        mappings = {
+            i = {
+                ['<C-.>'] = require('telescope.actions').delete_buffer
+            }
+        }
+    }
+}
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})

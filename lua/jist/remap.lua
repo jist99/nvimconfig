@@ -9,12 +9,12 @@ vim.keymap.set("n", "Q", "<nop>")
 
 --lazy shift finger
 vim.cmd([[
-    :command WQ wq
-    :command Wq wq
-    :command W w
-    :command Q q
-    :command Qa qa
-    :command QA qa
+    :command! WQ wq
+    :command! Wq wq
+    :command! W w
+    :command! Q q
+    :command! Qa qa
+    :command! QA qa
 ]])
 
 --tabs
@@ -48,3 +48,9 @@ vim.keymap.set("n", "<Bslash>0", ":LualineBuffersJump! 0<cr>")
 
 --filetree
 vim.keymap.set("n", "<leader>ft", ":NvimTreeToggle<cr>")
+
+--terminal
+vim.cmd([[
+    :tnoremap <Esc> <C-\><C-n>
+    :tnoremap <C-w> <C-\><C-n><C-w>
+]])
