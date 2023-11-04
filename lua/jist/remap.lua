@@ -50,7 +50,9 @@ vim.keymap.set("n", "<Bslash>0", ":LualineBuffersJump! 0<cr>")
 vim.keymap.set("n", "<leader>ft", ":NvimTreeToggle<cr>")
 
 --terminal
-vim.cmd([[
-    :tnoremap <Esc> <C-\><C-n>
-    :tnoremap <C-w> <C-\><C-n><C-w>
-]])
+function _G.set_terminal_keymaps()
+    local opts = {buffer = 0}
+    vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
+    vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
+end
+vim.cmd('autocmd! TermOpen term://*toggleterm* lua set_terminal_keymaps()')
