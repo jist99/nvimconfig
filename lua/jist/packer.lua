@@ -43,7 +43,6 @@ return require('packer').startup(function(use)
     -- terminals
     use {"akinsho/toggleterm.nvim", tag = 'v2.*'}
 
-    -- nvim v0.7.2
     use({
         "kdheepak/lazygit.nvim",
         -- optional for floating window border decoration
@@ -51,6 +50,15 @@ return require('packer').startup(function(use)
             "nvim-lua/plenary.nvim",
         },
     })
+
+    -- highlight and search TODOs
+    use {
+        'folke/todo-comments.nvim',
+        requires = {
+            "nvim-lua/plenary.nvim"
+        },
+        opts = {}
+    }
 
     use {
         'VonHeikemen/lsp-zero.nvim',
