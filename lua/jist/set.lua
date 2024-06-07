@@ -20,7 +20,8 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 
-vim.opt.colorcolumn = "100"
+-- This is now served by the virtual colour column
+--vim.opt.colorcolumn = "101"
 
 --the status line shows us the mode
 vim.opt.showmode = false
