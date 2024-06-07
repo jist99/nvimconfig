@@ -4,28 +4,23 @@ require('lualine').setup{
         section_separators = '',
         component_separators = ''
     },
-    extensions = {'fugitive', 'nvim-tree'},
+    extensions = {'fugitive', 'nvim-tree', 'toggleterm'},
     sections = {
         lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
-        --lualine_c = {{
-        --    'buffers',
-        --    mode = 2,
-
-        --    buffers_color = {
-        --        active = 'lualine_c_visual',
-        --        inactive = 'lualine_c_inactive',
-        --    }
-        --}},
+        lualine_b = {'branch'},
+        lualine_c = {'diff', 'diagnostics'},
+        lualine_x = {{'filename', path=1}},
+        lualine_y = {},
+    },
+    inactive_sections = {
+        lualine_a = {},
+        lualine_x = {{'filename', path=1}},
+        lualine_z = {'location'}
     },
     tabline = {
         lualine_a = {{
             'tabs',
             mode = 2,
-        }},
-        lualine_y = {{
-            'filename',
-            path = 1,
         }},
         lualine_z = {{
             'datetime',

@@ -14,10 +14,6 @@ return require('packer').startup(function(use)
 
     use ({
         "ellisonleao/gruvbox.nvim",
-        config = function()
-            vim.o.background = "dark"
-            vim.cmd('colorscheme gruvbox')
-        end
     })
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -59,6 +55,12 @@ return require('packer').startup(function(use)
         },
         opts = {}
     }
+
+    -- give code coverage details in editor
+    use({
+        "andythigpen/nvim-coverage",
+        requires = "nvim-lua/plenary.nvim"
+    })
 
     use {
         'VonHeikemen/lsp-zero.nvim',
