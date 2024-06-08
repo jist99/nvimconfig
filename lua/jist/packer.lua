@@ -62,6 +62,9 @@ return require('packer').startup(function(use)
         requires = "nvim-lua/plenary.nvim"
     })
 
+    -- nicer looking colorcolumn
+    use "ecthelionvi/NeoColumn.nvim"
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
