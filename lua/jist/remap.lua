@@ -60,6 +60,3 @@ vim.cmd('autocmd! TermOpen term://*toggleterm* lua set_terminal_keymaps()')
 -- only use relative line numbers in the current buffer
 vim.cmd('autocmd BufEnter * if &nu | set rnu | endif')
 vim.cmd('autocmd BufLeave * if &nu | set nornu | endif')
-
--- Show a "ColorColumn" only on lines that violate it
-vim.cmd [[match ColorColumn /\%101v./]]
