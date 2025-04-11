@@ -32,9 +32,5 @@ require('lualine').setup{
             'tabs',
             mode = 2,
         }},
-        lualine_z = {{
-            'datetime',
-            style = '%d/%m/%y %H:%M',
-        }}
     },
 }
