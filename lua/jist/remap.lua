@@ -60,3 +60,6 @@ vim.cmd('autocmd! TermOpen term://*toggleterm* lua set_terminal_keymaps()')
 -- only use relative line numbers in the current buffer
 vim.cmd('autocmd BufEnter * if &nu | set rnu | endif')
 vim.cmd('autocmd BufLeave * if &nu | set nornu | endif')
+
+--lsp
+vim.keymap.set("n", "<leader>gd", "<C-]>")

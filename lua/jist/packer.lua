@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
 
     use('tpope/vim-fugitive')
 
-    use 'm4xshen/autoclose.nvim'
+    --use 'm4xshen/autoclose.nvim'
 
     use {
         'nvim-lualine/lualine.nvim',
@@ -63,5 +63,11 @@ return require('packer').startup(function(use)
 
     -- nicer looking colorcolumn
     use "ecthelionvi/NeoColumn.nvim"
+
+    use {
+        "saghen/blink.cmp",
+        requires = "rafamadriz/friendly-snippets",
+        tag = '1.1.*',
+    }
 
 end)
