@@ -30,3 +30,5 @@ vim.opt.splitright = true
 
 --make python indentation tolerable
 vim.g.pyindent_open_paren = vim.opt.shiftwidth
+
+vim.o.signcolumn = "no"
