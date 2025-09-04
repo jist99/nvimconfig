@@ -1,3 +1,2 @@
 /plugin/
-/lsp/
-/jist/lsp.lua
+lsp.lua

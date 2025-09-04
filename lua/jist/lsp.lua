@@ -1,5 +1,0 @@
--- Individual LSP setup
--- simply download the LSP via the package manager (homebrew or similar)
--- and do `vim.lsp.enable('lsp_name')
---
--- For example to enable lua_ls do `vim.lsp.enable('lua_ls')`
