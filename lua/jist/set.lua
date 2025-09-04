@@ -32,3 +32,6 @@ vim.opt.splitright = true
 vim.g.pyindent_open_paren = vim.opt.shiftwidth
 
 vim.o.signcolumn = "no"
+
+--show virtual text for lsp stuff
+vim.diagnostic.config({virtual_text = true})
