@@ -1,3 +1,11 @@
+-- colours!
+vim.o.background = "dark"
+vim.cmd('colorscheme retrobox')
+vim.api.nvim_set_hl(0, "Normal", { bg = "#282828" })
+vim.api.nvim_set_hl(0, "FoldColumn", { bg = "#282828" })
+vim.api.nvim_set_hl(0, "WinSeparator", { bg = nil, fg = "#665c54" })
+--
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -27,6 +35,8 @@ vim.opt.scrolloff = 8
 vim.opt.showmode = false
 
 vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.winfixheight = true
 
 --make python indentation tolerable
 vim.g.pyindent_open_paren = vim.opt.shiftwidth

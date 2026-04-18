@@ -50,12 +50,14 @@ vim.keymap.set("n", "<Bslash>0", ":LualineBuffersJump! 0<cr>")
 vim.keymap.set("n", "<leader>ft", ":NvimTreeToggle<cr>")
 
 --terminal
-function _G.set_terminal_keymaps()
-    local opts = {buffer = 0}
-    vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
-    vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
-end
-vim.cmd('autocmd! TermOpen term://*toggleterm* lua set_terminal_keymaps()')
+vim.api.nvim_create_autocmd({"TermOpen"}, {
+    pattern = "term://*toggleterm*",
+    callback = function()
+        local opts = {buffer = 0}
+        vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
+        vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
+    end,
+})
 
 -- only use relative line numbers in the current buffer
 vim.cmd('autocmd BufEnter * if &nu | set rnu | endif')

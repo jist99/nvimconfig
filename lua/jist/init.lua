@@ -1,4 +1,4 @@
 require("jist.remap")
 require("jist.set")
-require("jist.packer")
+require("jist.plugins")
 require("jist.lsp")
