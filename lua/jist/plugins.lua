@@ -12,6 +12,5 @@ vim.pack.add({
     {src = "https://github.com/saghen/blink.cmp", version = 'v1.10.2'},
     "https://github.com/romus204/tree-sitter-manager.nvim", -- treesitter management
     "https://github.com/windwp/nvim-autopairs",
-    "https://github.com/akinsho/toggleterm.nvim",
-    -- TODO: autoclose plugin
+    "https://github.com/akinsho/toggleterm.nvim", -- I think we can make our own..
 })

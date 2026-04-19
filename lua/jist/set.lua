@@ -1,9 +1,13 @@
 -- colours!
 vim.o.background = "dark"
 vim.cmd('colorscheme retrobox')
-vim.api.nvim_set_hl(0, "Normal", { bg = "#282828" })
-vim.api.nvim_set_hl(0, "FoldColumn", { bg = "#282828" })
-vim.api.nvim_set_hl(0, "WinSeparator", { bg = nil, fg = "#665c54" })
+--vim.api.nvim_set_hl(0, "Normal", { bg = "#282828" })
+--vim.api.nvim_set_hl(0, "FoldColumn", { bg = "#282828" })
+--vim.api.nvim_set_hl(0, "WinSeparator", { bg = nil, fg = "#665c54" })
+vim.api.nvim_set_hl(0, "DiagnosticVirtualTextError", { bg = nil, fg = "#ff4636" })
+vim.api.nvim_set_hl(0, "DiagnosticError", { bg = nil, fg = "#ff4636" })
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", {underline = true, sp = "#ff4636" })
+vim.api.nvim_set_hl(0, "LspDiagnosticsSignError", { bg = nil, fg = "#ff4636" })
 --
 
 vim.opt.nu = true
@@ -27,9 +31,6 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-
--- This is now served by the virtual colour column
---vim.opt.colorcolumn = "100"
 
 --the status line shows us the mode
 vim.opt.showmode = false
