@@ -46,3 +46,12 @@ vim.o.signcolumn = "no"
 
 --show virtual text for lsp stuff
 vim.diagnostic.config({virtual_text = true})
+
+-- UI2
+require('vim._core.ui2').enable({
+    enable = true,
+    targets = 'cmd',
+    cmd = {
+        height = 10
+    }
+})
